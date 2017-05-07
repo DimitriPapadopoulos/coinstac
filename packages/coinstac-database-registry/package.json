@@ -1,0 +1,40 @@
+{
+  "author": "NI Development - The Mind Research Network <nidev@mrn.org> (http://coins.mrn.org)",
+  "bugs": {
+    "url": "https://github.com/MRN-Code/coinstac/issues"
+  },
+  "contributors": [
+    "Chris Dieringer <cdaringe@gmail.org>",
+    "Cory Reed <swashcap@gmail.com>",
+    "Ross Kelly <rkelly@mrn.org>",
+    "Drew Landis <landis.d@gmail.com>",
+    "Sergey Plis <splis@mrn.org>"
+  ],
+  "dependencies": {
+    "pouchdb-adapter-memory": "^6.1.1",
+    "pouchy": "^11.0.3"
+  },
+  "description": "Database container for COINSTAC.",
+  "devDependencies": {
+    "nyc": "^10.0.0",
+    "sinon": "^2.2.0",
+    "spawn-pouchdb-server": "^3.3.3",
+    "tape": "^4.6.3"
+  },
+  "homepage": "https://github.com/MRN-Code/coinstac#readme",
+  "keywords": [
+    "coinstac",
+    "computations"
+  ],
+  "license": "MIT",
+  "main": "src/coinstac-database-registry.js",
+  "name": "coinstac-database-registry",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MRN-Code/coinstac.git"
+  },
+  "scripts": {
+    "test": "nyc --reporter=lcov node test/index.js"
+  },
+  "version": "2.4.0"
+}
