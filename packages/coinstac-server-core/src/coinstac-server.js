@@ -117,6 +117,7 @@ class CoinstacServer {
         path: CoinstacServer.COMPUTATIONS_PATH,
       }))
       .then((computationRegistry) => {
+        debugger;
         this.logger.info('Computation registry initialized');
         return computationRegistry;
       });

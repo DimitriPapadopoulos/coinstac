@@ -36,6 +36,7 @@ class Computation extends Base {
     /* eslint-disable global-require */
     const JavascriptComputation = require('./javascript-computation');
     const CommandComputation = require('./command-computation');
+    const DockerComputation = require('./docker-computation');
     /* eslint-enable global-require */
 
     return rawComps.map(comp => {
@@ -45,6 +46,8 @@ class Computation extends Base {
           return new JavascriptComputation(comp);
         case 'cmd':
           return new CommandComputation(comp);
+        case 'docker':
+          return new DockerComputation(comp);
         default:
           throw new ReferenceError(`unable to instantiate ${type} computation`);
       }
